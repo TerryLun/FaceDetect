@@ -1,7 +1,7 @@
 import cv2
 import os
 
-video_file = [f for f in os.listdir('.') if f.endswith('.mp4')][0]
+video_file = [f for f in os.listdir('..') if f.endswith('.mp4')][0]
 
 video = cv2.VideoCapture(video_file)
 face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
